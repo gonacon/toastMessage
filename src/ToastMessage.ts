@@ -48,21 +48,17 @@ class ToastMessage {
             clearTimeout(this.messageTimer);
             this.messageTimer = null;
         }
-        console.log('showMessage() message=', message);
         this.messageTimer = setTimeout(() => {
             this.toastContainer.classList.remove('active');
-            console.log('showMessage() message hide ', message);
             this.toastContainer.style.opacity = '0';
         }, duration);
     }
 
     setDuration(time: number) {
-        console.log('setDuration() time=', time);
         this.duration = time;
     }
 
     setFontSize(size: number) {
-        console.log('setFontSize() size=', size);
         this.toastContainer.style.fontSize = `${ size }px`;
     }
 }

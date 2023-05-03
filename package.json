@@ -1,6 +1,6 @@
 {
   "name": "js-toast-msg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Library that displays toast messages on the html screen.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
