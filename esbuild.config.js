@@ -1,10 +1,11 @@
-const { build } = require('esbuild');
+const esbuild = require('esbuild');
 
-build({
-    entryPoints: ['./src/index.ts'],
+esbuild.build({
+    entryPoints: ['src/index.ts'],
     bundle: true,
+    format: 'cjs',
     minify: true,
-    sourcemap: true,
-    target: 'es2015',
-    outfile: './dist/bundle.js',
+    minifyIdentifiers: true,
+    minifyWhitespace: true,
+    outdir: 'dist',
 }).catch(() => process.exit(1));

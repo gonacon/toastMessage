@@ -1,6 +1,6 @@
 {
   "name": "js-toast-msg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Library that displays toast messages on the html screen.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "esbuild": "esbuild --outdir=dist --bundle --minify-identifiers --minify-whitespace --format=cjs src/index.ts",
-    "build": "esbuild --config=esbuild.config.js",
+    "build": "node esbuild.config.js",
     "webpackBuild": "webpack --config webpack.config.js",
     "test": "test"
   },
@@ -19,13 +19,13 @@
     "toast"
   ],
   "author": "peter yo",
+  "email": "gonacon@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.17.18",
+    "esbuild": "^0.17.19",
     "esbuild-loader": "^3.0.1",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "uglifyjs-webpack-plugin": "^2.2.0"
-  },
-  "dependencies": {}
+  }
 }
