@@ -9,23 +9,27 @@ $ npm install js-toast-msg
 ```
 import { toast } from 'js-toast-msg';
 
-const pageTitle = 'home';
+const pageTitle = 'home';  
+
 /**
 * Displays the toast message.
 */
 toast.showMessage(`pageTitle= ${pageTitle}`); 
+```
 
+```
 /**
 * Change the displayed time of the toast message.
 * The property of the parameter is millisecond.
 */
 toast.setDuration(5000); 
+```
 
+```
 /**
 * Change the font size of the toast message.
 */
 toast.setFontSize(15);  
-
 ```
 
 # Contributors   

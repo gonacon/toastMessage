@@ -27,5 +27,8 @@
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "uglifyjs-webpack-plugin": "^2.2.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
   }
 }
